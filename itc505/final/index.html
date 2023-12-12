@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lights Out</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Lights Out Game!</h1>
+    <div class="container" id="layout"></div>
+    <div class="board" id="board"></div>
+    <button id="refreshButton">Reset board</button>
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <h1>Addendums</h1>
+    <h2>Process and Creative Choices</h2>
+
+    <p>
+      1.HTML Structure: The HTML structure is minimal and focuses on the core
+      elements of the game. '' contains a heading for the game title, '' for the
+      game layout, and '' for resetting the game board. Semantic tags improve
+      the readability of your code.
+    </p>
+
+    <p>
+      2.CSS Style:CSS uses flexbox and grid layout for responsiveness.
+      Background images add visual appeal, and contrasting colors ensure
+      readability. Styles are logically organized, making them easy to
+      understand and modify. Timer and footer styles add to the overall
+      aesthetic.
+    </p>
+    <p>
+      3.JavaScript logic:The JavaScript code is well structured and uses
+      functions for various game functions. Constants like "LAYOUT_SIZE" make
+      your code more flexible. Event listeners handle user interactions such as:
+      B. Click the cell or reset the board. The randomization feature
+      ('randomizelayout') ensures a dynamic and challenging gaming experience.
+    </p>
+    <p>
+      4.Game Logic:The game follows the concept of Lights Out puzzles, where
+      clicking on a cell toggles the state of that cell and the state of
+      adjacent cells. The "checkWin" function determines whether the player
+      successfully turned off all lights. The game initializes, renders, and
+      randomizes the layout on page load.</p>
+    <sp>5.Timer Function: A timer
+      function has been implemented to track the player's progress. It starts
+      when the page loads and resets when the game is restarted. The timer is
+      displayed in a dedicated '' element.
+    </p>
+
+    <h2>Challenges and how they were overcome</h2>
+    <p>
+      1. Styling challenges: Achieving a visually appealing design while
+      remaining responsive was a challenge. Through the use of flexbox and grid
+      layout, and careful color selection, we were able to create a visually
+      pleasing interface.
+    </p>
+    <p>
+      2.Randomization logic:It was difficult to randomize the original layout
+      while still allowing the puzzle to be solved. Iterative testing and
+      refinement of the randomization function were essential to finding a
+      balance between randomness and solvability.</p>
+      <p>3 Timer implementation: 
+      Including a timer that starts on page load and restarts every time the
+      game is reset required careful consideration of the timer lifecycle. .
+      Using a combination of 'setInterval' and 'clearInterval' solved this
+      challenge.
+    </p>
+    <h2>Lessons learned</h2>
+    <p>
+      1.Code organization:Well-organized code with clear separation of concerns
+      is critical to readability and maintainability . Functions such as
+      "toggleLights", "toggleCell", and "checkWin" contribute to modular and
+      understandable code.
+    </p>
+    <p>
+      2.User Experience:It's important to balance game difficulty with a fun
+      user experience. Random logic provides each game with a unique challenge
+      to keep players interested.
+    </p>
+    <p>
+      3.Responsive Design: Combining flexbox and grid layout with responsive
+      design principles is effective in creating visually appealing and
+      adaptable interfaces for different screen sizes. It's a target.
+    </p>
+    <p>
+      4.Timers and User Engagement:Incorporating timers increases user
+      engagement and competitiveness. You can get a sense of accomplishment by
+      notifying the player's progress with a timer.
+    </p>
+</footer>
+</html>
